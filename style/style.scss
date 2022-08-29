@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300;400&family=Lato&display=swap');
 @import "animations";
-@import "media";
-
 
 * {
 	margin: 0;
@@ -52,7 +50,7 @@
 }
 
 .bottom-block {
-	height: 100vh;
+	display: none;
 	text-align: center;
 	background-color: skyblue;
 	.bottom-block-text {
@@ -66,7 +64,6 @@
 			color: skyblue;
 			border-radius: 15px;
 			padding: 0 15px 0 15px;
-			background-color: black;
 		}
 		#hex-text {
 			margin-right: 15px;
@@ -83,3 +80,6 @@
 		margin-top: 25px;
 	}
 }
+
+/*Медиа запросы*/
+@import "media";

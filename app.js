@@ -29,11 +29,13 @@ button.addEventListener('focus', function (){
 		hexColor += hexArray[ranIndex]
 	}
 
-	let background = document.querySelector('body')
-	let quote = document.querySelector('.quote')
+	const background = document.querySelector('body')
+	const bottomBlock = document.querySelector('.bottom-block')
+	const quote = document.querySelector('.quote')
 	let hexNum = document.getElementById('hex-num')
 	let ranNumQuote = Math.floor(Math.random() * quotesArray.length) //Рандомное число для цитаты
 
+	bottomBlock.style.display = 'block'
 	background.style.backgroundColor  = `#${hexColor}`
 	hexNum.textContent = `#${hexColor}`
 	hexNum.style.backgroundColor = `#${hexColor}`
@@ -45,5 +47,4 @@ button.addEventListener('focus', function (){
 	hexColor = ''
 	this.blur()
 })
-
 
