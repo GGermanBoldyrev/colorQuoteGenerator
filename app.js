@@ -23,7 +23,7 @@ const quotesArray = [{"q":"If there were no God, there would be no atheists.","a
 	{"q":"A clever person turns great troubles into little ones, and little ones into none at all. ","a":"Chinese Proverb","c":"89","h":"<blockquote>&ldquo;A clever person turns great troubles into little ones, and little ones into none at all. &rdquo; &mdash; <footer>Chinese Proverb</footer></blockquote>"},{"q":"Every night before going to sleep, we must ask ourselves: what weakness did I overcome today? What virtue did I acquire?","a":"Seneca","c":"120","h":"<blockquote>&ldquo;Every night before going to sleep, we must ask ourselves: what weakness did I overcome today? What virtue did I acquire?&rdquo; &mdash; <footer>Seneca</footer></blockquote>"}]
 let hexColor = ''
 
-button.addEventListener('focus', function (){
+button.addEventListener('click', function (){
 	for (let i = 0; i <= 5; i++){
 		let ranIndex = Math.floor(Math.random() * hexArray.length)	//Рандомное число для hex
 		hexColor += hexArray[ranIndex]
@@ -45,6 +45,5 @@ button.addEventListener('focus', function (){
 	document.querySelector('.quote-author').textContent = quotesArray[ranNumQuote].a
 
 	hexColor = ''
-	this.blur()
 })
 
