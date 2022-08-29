@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300;400&family=Lato&display=swap');
+@import "animations";
+@import "media";
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Anek Telugu', sans-serif;
+	font-size: 60px;
+}
+
+.container {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.top-block {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	animation: colorChange 25s infinite linear;
+	.top-block-wrapper {
+		margin-top: 250px;
+		margin-bottom: 125px;
+		min-height: 60vh;
+		display: flex;
+		flex-direction: column;
+		.top-block-button {
+			margin-top: 125px;
+		}
+	}
+	.top-block-button {
+		.random-button {
+			color: white;
+			padding: 40px 25px 25px 25px;
+			border: none;
+			border-radius: 50%;
+			-webkit-box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+			-moz-box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+			box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+			animation: colorButton 25s infinite linear;
+			&:hover {
+				cursor: pointer;
+				color: #fff0f0;
+			}
+		}
+	}
+}
+
+.bottom-block {
+	height: 100vh;
+	text-align: center;
+	background-color: skyblue;
+	.bottom-block-text {
+		padding-top: 125px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		#hex-num {
+			font-family: 'Lato', sans-serif;
+			font-size: 50px;
+			color: skyblue;
+			border-radius: 15px;
+			padding: 0 15px 0 15px;
+			background-color: black;
+		}
+		#hex-text {
+			margin-right: 15px;
+			padding-top: 16px;
+		}
+	}
+	.quote {
+		margin-top: 125px;
+		padding: 19px 20px 0 20px;
+		border-radius: 15px;
+		color: skyblue;
+	}
+	.quote-author {
+		margin-top: 25px;
+	}
+}
